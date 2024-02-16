@@ -76,8 +76,8 @@ const Works = () => {
                         <div className="px-4 py-6">
                         <h4 className="font-bold text-primary uppercase text-xl mb-2 line-clamp-1">Tailwind CSS Website</h4>
                         <p className='mb-4 text-sm line-clamp-3'>website yang sudah ada sebelumnya dari pak sandhika galih web programming unpas yang saya modifikasi lagi dengan UI yang lebih menarik terima kasih pak dhika</p>
-                        <a href="https://tailwind-css-website-kappa.vercel.app/" target='_blank' className="text-[12px] bg-primary px-3 py-2 mr-2 rounded-full hover:shadow-lg hover:bg-teal-500 text-white dark:bg-slate-500 dark:hover:bg-slate-600">Preview</a>
-                        <a href="https://github.com/evanstef/tailwind-css-website" target='_blank' className="text-[12px] bg-primary px-3 py-2 rounded-full hover:shadow-lg hover:bg-teal-500 text-white dark:bg-slate-500 dark:hover:bg-slate-600">Source Code</a>
+                        <a href="https://tailwind-css-website-kappa.vercel.app/" target='_blank' className="text-[12px] md:text-sm bg-primary px-3 py-2 mr-2 rounded-full hover:shadow-lg hover:bg-teal-500 text-white dark:bg-slate-500 dark:hover:bg-slate-600">Preview</a>
+                        <a href="https://github.com/evanstef/tailwind-css-website" target='_blank' className="text-[12px] md:text-sm bg-primary px-3 py-2 rounded-full hover:shadow-lg hover:bg-teal-500 text-white dark:bg-slate-500 dark:hover:bg-slate-600">Source Code</a>
                         </div>
                         </div>
                         </motion.div>  
