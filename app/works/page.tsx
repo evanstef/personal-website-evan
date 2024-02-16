@@ -12,7 +12,7 @@ import {motion, useInView} from 'framer-motion';
 const Works = () => {
 
     const viewOne : any = useRef()
-    const scrollViewOne = useInView(viewOne)
+    const scrollViewOne = useInView(viewOne,{margin:"-50px"})
 
     const viewTwo : any = useRef()
     const scrollViewTwo = useInView(viewTwo,{margin:"-300px"})

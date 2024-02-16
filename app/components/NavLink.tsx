@@ -11,7 +11,7 @@ const NavLink = ({link} : any) => {
     
   return (
     <>
-      <Link href={link.url} className={`text-white hover:text-slate-300 hover:md:text-slate-950 md:text-slate-600 ${getLink === link.url && "text-3xl text-slate-300 md:text-base md:text-slate-950 font-bold"}`}>{link.title}</Link>
+      <Link key={link.title} href={link.url} className={`text-white hover:text-slate-300 hover:md:text-slate-950 md:text-slate-600 ${getLink === link.url && "text-3xl text-slate-300 md:text-base md:text-slate-950 font-bold"}`}>{link.title}</Link>
     </>
   )
 }

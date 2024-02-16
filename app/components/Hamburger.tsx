@@ -56,8 +56,8 @@ const Hamburger = () => {
     {open && (
       <motion.div variants={listVariant} initial="closed" animate="opened" className={`absolute top-0 right-0 w-screen h-screen bg-slate-700 flex-col gap-14 text-2xl flex justify-center items-center z-10 md:hidden`}>
       {links.map((link,i) => (
-            <motion.div initial={{x:-70,opacity:0}} animate={{x:0, opacity:1, transition:{delay:i * 0.3}}}>
-              <Link className={`text-white text-2xl ${getLink === link.url && "text-3xl text-slate-300 font-bold"}`} href={link.url} >
+            <motion.div key={i} initial={{x:-70,opacity:0}} animate={{x:0, opacity:1, transition:{delay:i * 0.3}}}>
+              <Link key={link.title} className={`text-white text-2xl ${getLink === link.url && "text-3xl text-slate-300 font-bold"}`} href={link.url} >
               {link.title}
               </Link>
             </motion.div>

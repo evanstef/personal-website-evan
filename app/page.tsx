@@ -20,6 +20,7 @@ export default function Home() {
        <motion.div initial={{scale:0}} animate={{scale:1}} transition={{delay:1.2}} className="mt-10 md:w-1/2">
           <h1 className="text-[45px] text-center font-bold lg:text-5xl">Crafting,Design,As a {text.split("").map((kata,i) => 
           <motion.span 
+          key={i}
           initial={{opacity:1}} 
           animate={{opacity:0}} 
           transition={{duration:4,repeat:Infinity, delay:i * 0.05}}>
