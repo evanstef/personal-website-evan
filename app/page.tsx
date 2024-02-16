@@ -27,7 +27,7 @@ export default function Home() {
             {kata}
           </motion.span>)}
           </h1>
-          <p className="my-5 font-semibold lg:text-xl"> As a junior front end web developer i'm familiar with JavaScript/TypeScript and also i'm use a nextJS framework for daily coding as a junior web developer if you wanna see my works just click menu works in down below and also you wanna know more about me just click about me menu in down below happy coding </p>
+          <p className="my-5 font-semibold lg:text-xl"> As a junior front end web developer i&apos;m familiar with JavaScript/TypeScript and also i&apos;m use a nextJS framework for daily coding as a junior web developer if you wanna see my works just click menu works in down below and also you wanna know more about me just click about me menu in down below happy coding </p>
           <MenuBooth />
       </motion.div>
       </div>
