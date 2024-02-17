@@ -28,8 +28,8 @@ export default function Home() {
           </motion.span>)}
           </h1>
           <p className="my-5 font-semibold lg:text-xl"> Hello, my name is Evan, I am a junior front end web developer. JavaScript/TypeScript is my speciality and i mainly using nextJS framework for my projects. If you want to see my works just click on the menu button below.
-
-          Feel free to know me more by clicking the “about me” button below. Happy coding fellas!</p>
+          </p>
+          <p className="my-5 font-semibold lg:text-xl">Feel free to know me more by clicking the “about me” button below. Happy coding fellas!</p>
           <MenuBooth />
       </motion.div>
       </div>
