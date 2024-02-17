@@ -70,29 +70,29 @@ const About = () => {
           <motion.h1 initial={{x:60, opacity:0}} animate={scrollView ? {x:0,opacity:1} : {}} className='mb-6 font-extrabold text-2xl'>FrameWork Or Library</motion.h1>
           
           {/* Bar Framework */}
-          <motion.div initial={{x:60, opacity:0}} animate={scrollView ? {x:0,opacity:1,transition:{delay:0.6}} : {}} className='bg-slate-700 judul flex justify-between font-semibold rounded-lg px-4 text-white mt-5 w-[70%]'>
+          <motion.div initial={{x:60, opacity:0}} animate={scrollView ? {x:0,opacity:1,transition:{delay:0.6}} : {}} className='bg-slate-700 judul flex justify-between font-semibold rounded-lg px-4 text-white mt-5 w-[75%]'>
             <h3>ReactJS</h3>
-            <p>B</p>
+            <p>Intermediate</p>
           </motion.div>
 
-          <motion.div initial={{x:60, opacity:0}} animate={scrollView ? {x:0,opacity:1,transition:{delay:1}} : {}} className='bg-slate-700 judul flex justify-between font-semibold rounded-lg px-4 text-white mt-5 w-[70%]'>
+          <motion.div initial={{x:60, opacity:0}} animate={scrollView ? {x:0,opacity:1,transition:{delay:1}} : {}} className='bg-slate-700 judul flex justify-between font-semibold rounded-lg px-4 text-white mt-5 w-[75%]'>
             <h3>NextJS</h3>
-            <p>B-</p>
+            <p>Intermediate</p>
           </motion.div>
 
-          <motion.div initial={{x:60, opacity:0}} animate={scrollView ? {x:0,opacity:1,transition:{delay:1.4}} : {}} className='bg-slate-700 judul flex justify-between font-semibold rounded-lg px-4 text-white mt-5 w-[70%]'>
+          <motion.div initial={{x:60, opacity:0}} animate={scrollView ? {x:0,opacity:1,transition:{delay:1.4}} : {}} className='bg-slate-700 judul flex justify-between font-semibold rounded-lg px-4 text-white mt-5 w-[75%]'>
             <h3>Django</h3>
-            <p>C+</p>
+            <p>Beginner</p>
           </motion.div>
 
-          <motion.div initial={{x:60, opacity:0}} animate={scrollView ? {x:0,opacity:1,transition:{delay:1.8}} : {}} className='bg-slate-700 judul flex justify-between font-semibold rounded-lg px-4 text-white mt-5 w-[70%]'>
+          <motion.div initial={{x:60, opacity:0}} animate={scrollView ? {x:0,opacity:1,transition:{delay:1.8}} : {}} className='bg-slate-700 judul flex justify-between font-semibold rounded-lg px-4 text-white mt-5 w-[75%]'>
             <h3>Tailwind CSS</h3>
-            <p>A+</p>
+            <p>Advance</p>
           </motion.div>
 
-          <motion.div initial={{x:60, opacity:0}} animate={scrollView ? {x:0,opacity:1,transition:{delay:2.2}} : {}} className='bg-slate-700 judul flex justify-between font-semibold rounded-lg px-4 text-white mt-5 w-[70%]'>
+          <motion.div initial={{x:60, opacity:0}} animate={scrollView ? {x:0,opacity:1,transition:{delay:2.2}} : {}} className='bg-slate-700 judul flex justify-between font-semibold rounded-lg px-4 text-white mt-5 w-[75%]'>
             <h3>Bootstrap</h3>
-            <p>A</p>
+            <p>Intermediate</p>
           </motion.div>
 
           <div className='mb-5'></div>
