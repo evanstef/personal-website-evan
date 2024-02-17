@@ -24,7 +24,7 @@ const About = () => {
         </div>
         <div className='md:w-1/3 lg:w-1/2'>
           <motion.h1 initial={{x:50, opacity:0}} animate={{x:0, opacity:1}} transition={{delay:1.2}} className='text-2xl font-extrabold'>Holla i am {text.split("").map((kata,i) => <motion.span key={i} initial={{opacity:1}} animate={{opacity:0}} transition={{duration:3,repeat:Infinity,delay:i * 0.03}}>{kata}</motion.span>)}</motion.h1>
-          <motion.p initial={{x:50, opacity:0}} animate={{x:0, opacity:1}} transition={{delay:1.5}} className='my-6 font-semibold'>i am a front web developer create a responsive design and crafting a creativy in website and also i am doing a little bit about back end with pyhton and also django framework as a framework for my back end by the way i am 20 years old, beside coding if i am bored i playing more games especially first person shooting games</motion.p>
+          <motion.p initial={{x:50, opacity:0}} animate={{x:0, opacity:1}} transition={{delay:1.5}} className='my-6 font-semibold'>This is my current skills graphically. I create a bunch of responsive design to express my creativity, especially in designing websites. I&apos;m still working on back end with python language and django framework. Beside coding, in my boredom i also play first person shooting games</motion.p>
           <motion.i initial={{x:50,opacity:0}} animate={{x:0,opacity:1}}>{quotes.split("").map((text,i) => <motion.span key={i} initial={{opacity:0}} animate={{opacity:1,transition:{delay:i * 0.07}}} transition={{repeat:0}} >{text}</motion.span>)}</motion.i>
 
           <motion.h1 initial={{x:50,opacity:0}} animate={{x:0, opacity:1, transition:{delay:2}}}className='mt-28 text-2xl font-extrabold mb-6'>My Skills</motion.h1>
