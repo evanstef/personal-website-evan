@@ -77,7 +77,7 @@ const Works = () => {
                         <div className="rounded-lg shadow-lg overflow-hidden bg-slate-300 hover:scale-95 hover:cursor-pointer transition duration-300 ease-in-out">
                         <Image src={tiga} alt="Blog 1" />
                         <div className="px-4 py-6">
-                        <h4 className="font-bold text-primary uppercase text-xl mb-2 line-clamp-1">Parallax Animated Website(Desktop Only)</h4>
+                        <h4 className="font-bold text-primary uppercase text-xl mb-2 line-clamp-1">Parallax Animated Website (Desktop Only)</h4>
                         <p className='mb-4 text-sm line-clamp-3'>membuat web perpindahan 4 musim dengan konsep parallax dengan menggunakan animasi sederhana dibuat dari vanilla javascript dan juga vanilla css</p>
                         <a href="https://parallax-website-tan-one.vercel.app/" target='_blank' className="text-[12px] md:text-sm bg-primary px-3 py-2 mr-2 rounded-full hover:shadow-lg hover:bg-teal-500 text-white dark:bg-slate-500 dark:hover:bg-slate-600">Preview</a>
                         <a href="https://github.com/evanstef/parallax-website" target='_blank' className="text-[12px] md:text-sm bg-primary px-3 py-2 rounded-full hover:shadow-lg hover:bg-teal-500 text-white dark:bg-slate-500 dark:hover:bg-slate-600">Source Code</a>
