@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import black from '../public/profil.jpg';
+import black from '../public/gambar.jpg';
 import MenuBooth from "./components/MenuBooth";
 import {motion} from "framer-motion";
 
@@ -15,7 +15,7 @@ export default function Home() {
       animate={{y:"0%"}} transition={{duration:0.7}}>
       <div className="home-container h-full flex flex-col items-center mx-10 mt-10 md:flex-row md:gap-14 lg:mx-60">
        <motion.span initial={{x:-200, opacity:0}} animate={{x:0, opacity:1}} transition={{delay:1}} className="md:w-1/2">
-          <Image className="w-80 h-80 rounded-full border-8 border-slate-400 shadow-2xl md:w-[440px] md:h-[440px] lg:w-full lg:h-[700px]" src={black} alt="" />
+          <Image className="w-80 h-80 rounded-full border-8 border-slate-400 shadow-2xl md:w-[440px] md:h-[440px] lg:w-full lg:h-[700px] bg-cover bg-center" src={black} alt="" />
        </motion.span>
        <motion.div initial={{scale:0}} animate={{scale:1}} transition={{delay:1.2}} className="mt-10 md:w-1/2">
           <h1 className="text-[45px] text-center font-bold lg:text-5xl">Crafting,Design,As a {text.split("").map((kata,i) => 
@@ -31,6 +31,7 @@ export default function Home() {
           </p>
           <p className="my-5 font-semibold lg:text-xl">Feel free to know me more by clicking the “about me” button below. Happy coding fellas!</p>
           <MenuBooth />
+          <div className="mb-5"></div>
       </motion.div>
       </div>
       </motion.div>
