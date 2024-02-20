@@ -4,6 +4,7 @@ import Link from 'next/link'
 import React, { useRef } from 'react'
 import satu from '../../public/project-satu.png'
 import dua from '../../public/project-dua.png'
+import tiga from '../../public/project-tiga.png'
 import Image from 'next/image'
 import ContactLink from '../components/ContactLink'
 import {motion, useInView} from 'framer-motion';
@@ -54,20 +55,6 @@ const Works = () => {
                     </motion.div>  
                 </div>
 
-                {/* <div className="mb-12 p-11 md:w-1/2">
-                    <motion.div initial={{scale:0}} animate={{scale:1,transition:{delay:1.5}}}>
-                    <div className="rounded-lg shadow-lg overflow-hidden bg-slate-300 hover:scale-95 hover:cursor-pointer transition duration-300 ease-in-out">
-                        <Image src={img} alt="Blog 1" />
-                        <div className="px-4 py-6">
-                        <h4 className="font-bold text-primary uppercase text-xl mb-2">Tulisan Indah</h4>
-                        <p className='mb-4 text-sm line-clamp-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ea culpa maiores est magnam sint sapiente earum quos tempore non nisi nihil, maxime vero. Maxime id eos consectetur aliquid expedita.</p>
-                        <a href="" className="text-sm bg-primary px-6 py-2 mr-4 rounded-full hover:shadow-lg hover:bg-teal-500 text-white dark:bg-slate-500 dark:hover:bg-slate-600">Preview</a>
-                        <a href="" className="text-sm bg-primary px-6 py-2 rounded-full hover:shadow-lg hover:bg-teal-500 text-white dark:bg-slate-500 dark:hover:bg-slate-600">Source Code</a>
-                       </div>
-                    </div>
-                    </motion.div>        
-                </div> */}
-
                 <div className="p-8 md:w-1/2">
                     <div ref={viewOne}>
                         <motion.div initial={{scale:0}} animate={scrollViewOne ? {scale:1,transition:{delay:1.05}} : {}}>
@@ -78,6 +65,22 @@ const Works = () => {
                         <p className='mb-4 text-sm line-clamp-3'>website yang sudah ada sebelumnya dari pak sandhika galih web programming unpas yang saya modifikasi lagi dengan UI yang lebih menarik terima kasih pak dhika</p>
                         <a href="https://tailwind-css-website-kappa.vercel.app/" target='_blank' className="text-[12px] md:text-sm bg-primary px-3 py-2 mr-2 rounded-full hover:shadow-lg hover:bg-teal-500 text-white dark:bg-slate-500 dark:hover:bg-slate-600">Preview</a>
                         <a href="https://github.com/evanstef/tailwind-css-website" target='_blank' className="text-[12px] md:text-sm bg-primary px-3 py-2 rounded-full hover:shadow-lg hover:bg-teal-500 text-white dark:bg-slate-500 dark:hover:bg-slate-600">Source Code</a>
+                        </div>
+                        </div>
+                        </motion.div>  
+                    </div>     
+                </div>
+
+                <div className="p-8 md:w-1/2">
+                    <div ref={viewTwo}>
+                        <motion.div initial={{scale:0}} animate={scrollViewTwo ? {scale:1,transition:{delay:0.3}} : {}}>
+                        <div className="rounded-lg shadow-lg overflow-hidden bg-slate-300 hover:scale-95 hover:cursor-pointer transition duration-300 ease-in-out">
+                        <Image src={tiga} alt="Blog 1" />
+                        <div className="px-4 py-6">
+                        <h4 className="font-bold text-primary uppercase text-xl mb-2 line-clamp-1">Parallax Animated Website</h4>
+                        <p className='mb-4 text-sm line-clamp-3'>membuat web perpindahan 4 musim dengan konsep parallax dengan menggunakan animasi sederhana dibuat dari vanilla javascript dan juga vanilla css</p>
+                        <a href="https://parallax-website-tan-one.vercel.app/" target='_blank' className="text-[12px] md:text-sm bg-primary px-3 py-2 mr-2 rounded-full hover:shadow-lg hover:bg-teal-500 text-white dark:bg-slate-500 dark:hover:bg-slate-600">Preview</a>
+                        <a href="https://github.com/evanstef/parallax-website" target='_blank' className="text-[12px] md:text-sm bg-primary px-3 py-2 rounded-full hover:shadow-lg hover:bg-teal-500 text-white dark:bg-slate-500 dark:hover:bg-slate-600">Source Code</a>
                         </div>
                         </div>
                         </motion.div>  
