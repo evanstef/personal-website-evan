@@ -59,6 +59,7 @@ const ContactPage = () => {
           )}
        </motion.form>
     </div>
+    <div className='mb-4'></div>
     </motion.div>
   )
 }

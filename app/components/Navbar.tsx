@@ -42,7 +42,7 @@ const Navbar : React.FC = () => {
 
 
   return (
-    <nav className={`${visible ? "" : "-translate-y-full"} fixed bg-transparent z-10 backdrop-blur-sm w-full duration-300 ease-in-out flex justify-between items-center px-11 md:px-4 py-4 md:justify-evenly`}>
+    <nav className={`${visible ? "" : "-translate-y-full"}fixed bg-transparent z-10 backdrop-blur-sm w-full duration-300 ease-in-out flex justify-between items-center px-11 md:px-4 py-4 md:justify-evenly`}>
         <Link href="/" className='bg-slate-800 w-[87px] py-1 px-1 text-white text-base rounded font-bold'>Evan <span className='bg-white text-black px-1 rounded '>.tsx</span></Link>
         <div className='main-menu justify-evenly hidden md:flex md:w-1/2 lg:w-1/3'>
             {links.map((link : Com) => (
