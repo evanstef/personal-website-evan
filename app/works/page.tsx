@@ -2,25 +2,14 @@
 
 import Link from 'next/link'
 import React, { useRef } from 'react'
-import satu from '../../public/project-satu.png'
-import dua from '../../public/project-dua.png'
-import tiga from '../../public/project-tiga.png'
-import empat from '../../public/project-empat.png'
 import Image from 'next/image'
 import ContactLink from '../components/ContactLink'
 import {motion, useInView} from 'framer-motion';
+import { data } from '../components/DataWorks';
+
 
 
 const Works = () => {
-
-    const viewOne : any = useRef()
-    const scrollViewOne = useInView(viewOne,{margin:"-50px"})
-
-    const viewTwo : any = useRef()
-    const scrollViewTwo = useInView(viewTwo,{margin:"-300px"})
-
-    const viewThree : any = useRef()
-    const scrollViewThree = useInView(viewThree,{margin:"-300px"})
 
   return (
     <motion.div className="h-full" initial={{y: "-200vh"}}
@@ -43,71 +32,23 @@ const Works = () => {
             <ContactLink />
            </motion.div>
         </div>
-
+ 
         <div className='w-full h-auto bg-slate-700 rounded-lg md:flex md:flex-wrap'> 
-            <div className="p-8 md:w-1/2">
-                    <motion.div initial={{scale:0}} animate={{scale:1,transition:{delay:0.5}}}>
+                {data.map((item : any) => (
+                   <div id={item.id} className="p-8 md:w-1/2">
+                    <motion.div initial={{scale:0}} animate={{scale:1,transition:{delay:0.7 * item.id}}}>
                         <div className="rounded-lg shadow-lg overflow-hidden bg-slate-300 hover:scale-95 hover:cursor-pointer transition duration-300 ease-in-out">
-                        <Image src={satu} alt="Blog 1" />
+                        <Image src={item.image} alt="Blog 1" />
                         <div className="px-4 py-6">
-                        <h4 className="font-bold text-primary uppercase text-xl mb-2 line-clamp-1">Movie Search TMDB API</h4>
-                        <p className='mb-4 text-sm line-clamp-3'>membuat web pencarian film menggunakan framework ReactJS dengan menggunakan API dari TMDB API terima kasih TMDB API</p>
-                        <a href="https://evan-movie-search.vercel.app/" target='_blank' className="text-[12px] md:text-sm bg-primary px-3 py-2 mr-2 rounded-full hover:shadow-lg hover:bg-teal-500 text-white dark:bg-slate-500 dark:hover:bg-slate-600">Preview</a>
-                        <a href="https://github.com/evanstef/evan-movie-search" target='_blank' className="text-[12px] md:text-sm bg-primary px-3 py-2 rounded-full hover:shadow-lg hover:bg-teal-500 text-white dark:bg-slate-500 dark:hover:bg-slate-600">Source Code</a>
+                        <h4 className="font-bold text-primary uppercase text-xl mb-2 line-clamp-1">{item.judul}</h4>
+                        <p className='mb-4 text-sm line-clamp-3'>{item.desc}</p>
+                        <a href={item.link} target='_blank' className="text-[12px] md:text-sm bg-primary px-3 py-2 mr-2 rounded-full hover:shadow-lg hover:bg-teal-500 text-white dark:bg-slate-500 dark:hover:bg-slate-600">Preview</a>
+                        <a href={item.source} target='_blank' className="text-[12px] md:text-sm bg-primary px-3 py-2 rounded-full hover:shadow-lg hover:bg-teal-500 text-white dark:bg-slate-500 dark:hover:bg-slate-600">Source Code</a>
                        </div>
                     </div>
                     </motion.div>  
-                </div>
-
-                <div className="p-8 md:w-1/2">
-                    <div ref={viewOne}>
-                        <motion.div initial={{scale:0}} animate={scrollViewOne ? {scale:1,transition:{delay:0.7}} : {}}>
-                        <div className="rounded-lg shadow-lg overflow-hidden bg-slate-300 hover:scale-95 hover:cursor-pointer transition duration-300 ease-in-out">
-                        <Image src={empat} alt="Blog 1" />
-                        <div className="px-4 py-6">
-                        <h4 className="font-bold text-primary uppercase text-xl mb-2 line-clamp-1">Rawg clone</h4>
-                        <p className='mb-4 text-sm line-clamp-3'>website pencarian semua game game baik dari yang lama maupun game yang baru keluar serta mendapatkan detail dari game tersebut saya menggunakkan metode consume API yang saya ambil API nya dari rawg io dan website ini dibuat dengan menggunakkan framework nextJs</p>
-                        <a href="https://rawg-io-clone-peach.vercel.app/" target='_blank' className="text-[12px] md:text-sm bg-primary px-3 py-2 mr-2 rounded-full hover:shadow-lg hover:bg-teal-500 text-white dark:bg-slate-500 dark:hover:bg-slate-600">Preview</a>
-                        <a href="https://github.com/evanstef/rawg-io-clone" target='_blank' className="text-[12px] md:text-sm bg-primary px-3 py-2 rounded-full hover:shadow-lg hover:bg-teal-500 text-white dark:bg-slate-500 dark:hover:bg-slate-600">Source Code</a>
-                        </div>
-                        </div>
-                        </motion.div>  
-                    </div>     
-                </div>
-
-                <div className="p-8 md:w-1/2">
-                    <div ref={viewTwo}>
-                        <motion.div initial={{scale:0}} animate={scrollViewTwo ? {scale:1,transition:{delay:0.3}} : {}}>
-                        <div className="rounded-lg shadow-lg overflow-hidden bg-slate-300 hover:scale-95 hover:cursor-pointer transition duration-300 ease-in-out">
-                        <Image src={dua} alt="Blog 1" />
-                        <div className="px-4 py-6">
-                        <h4 className="font-bold text-primary uppercase text-xl mb-2 line-clamp-1">Tailwind CSS Website</h4>
-                        <p className='mb-4 text-sm line-clamp-3'>website yang sudah ada sebelumnya dari pak sandhika galih web programming unpas yang saya modifikasi lagi dengan UI yang lebih menarik terima kasih pak dhika</p>
-                        <a href="https://tailwind-css-website-kappa.vercel.app/" target='_blank' className="text-[12px] md:text-sm bg-primary px-3 py-2 mr-2 rounded-full hover:shadow-lg hover:bg-teal-500 text-white dark:bg-slate-500 dark:hover:bg-slate-600">Preview</a>
-                        <a href="https://github.com/evanstef/tailwind-css-website" target='_blank' className="text-[12px] md:text-sm bg-primary px-3 py-2 rounded-full hover:shadow-lg hover:bg-teal-500 text-white dark:bg-slate-500 dark:hover:bg-slate-600">Source Code</a>
-                        </div>
-                        </div>
-                        </motion.div>  
-                    </div>     
-                </div>
-
-                <div className="p-8 md:w-1/2">
-                    <div ref={viewThree}>
-                        <motion.div initial={{scale:0}} animate={scrollViewThree ? {scale:1,transition:{delay:0.3}} : {}}>
-                        <div className="rounded-lg shadow-lg overflow-hidden bg-slate-300 hover:scale-95 hover:cursor-pointer transition duration-300 ease-in-out">
-                        <Image src={tiga} alt="Blog 1" />
-                        <div className="px-4 py-6">
-                        <h4 className="font-bold text-primary uppercase text-xl mb-2 line-clamp-1">Parallax Animated Website (Desktop Only)</h4>
-                        <p className='mb-4 text-sm line-clamp-3'>membuat web perpindahan 4 musim dengan konsep parallax dengan menggunakan animasi sederhana dibuat dari vanilla javascript dan juga vanilla css</p>
-                        <a href="https://parallax-website-tan-one.vercel.app/" target='_blank' className="text-[12px] md:text-sm bg-primary px-3 py-2 mr-2 rounded-full hover:shadow-lg hover:bg-teal-500 text-white dark:bg-slate-500 dark:hover:bg-slate-600">Preview</a>
-                        <a href="https://github.com/evanstef/parallax-website" target='_blank' className="text-[12px] md:text-sm bg-primary px-3 py-2 rounded-full hover:shadow-lg hover:bg-teal-500 text-white dark:bg-slate-500 dark:hover:bg-slate-600">Source Code</a>
-                        </div>
-                        </div>
-                        </motion.div>  
-                    </div>     
-                </div>
-
-
+                </div> 
+                ))}
           </div>
           <div className='mb-6'></div>
     </div>
