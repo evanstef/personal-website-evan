@@ -35,7 +35,7 @@ const Works = () => {
  
         <div className='w-full h-auto bg-slate-700 rounded-lg md:flex md:flex-wrap'> 
                 {data.map((item : any) => (
-                   <div id={item.id} className="p-8 md:w-1/2">
+                   <div key={item.id} className="p-8 md:w-1/2">
                     <motion.div initial={{scale:0}} animate={{scale:1,transition:{delay:0.7 * item.id}}}>
                         <div className="rounded-lg shadow-lg overflow-hidden bg-slate-300 hover:scale-95 hover:cursor-pointer transition duration-300 ease-in-out">
                         <Image src={item.image} alt="Blog 1" />
