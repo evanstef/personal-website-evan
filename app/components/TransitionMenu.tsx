@@ -17,7 +17,7 @@ const TransitionMenu = ({children} : any) => {
           <motion.div className='fixed m-auto top-0 bottom-0 left-0 right-0 text-white text-6xl cursor-default w-fit h-fit z-50 md:text-8xl'
           initial={{opacity:1}}
           animate={{opacity:0}}
-          exit={{opacity:0}}
+          exit={{opacity:0,display : "none"}}
           transition={{duration:0.7, ease:"easeOut"}}>
             {pathName.substring(1)}
           </motion.div>
