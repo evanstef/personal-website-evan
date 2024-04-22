@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <motion.div className="h-full -z-10" initial={{y: "-200vh"}}
-      animate={{y:"0%"}} transition={{duration:0.7}}>
+      animate={{y:"0%"}} transition={{duration:0.7, delay : 0.2}}>
       <div className="home-container h-full flex flex-col items-center mx-10 mt-10 md:flex-row md:gap-14 lg:mx-60">
        <motion.span initial={{x:-200, opacity:0}} animate={{x:0, opacity:1}} transition={{delay:1}} className="md:w-1/2">
           <Image className="w-80 h-80 rounded-full border-8 border-slate-400 shadow-2xl md:w-[440px] md:h-[440px] lg:w-full lg:h-[700px] bg-cover bg-center" src={black} alt="" />

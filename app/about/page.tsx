@@ -16,7 +16,7 @@ const About = () => {
 
   return (
     <motion.div className="h-full" initial={{y: "-200vh"}}
-    animate={{y:"0%"}} transition={{duration:0.7}}>
+    animate={{y:"0%"}} transition={{duration:0.7, delay : 0.2}}>
     <div className="aboutContainer mx-8 lg:mx-60 md:flex md:gap-8 lg:top-0">
         <div className='hidden md:block top-0 mt-11 md:w-1/2'>
           <motion.div initial={{opacity:0}} animate={{opacity:1, transition:{delay:0.85}}} className='md:mx-10 lg:mx-0 w-60 h-60 lg:w-[45%] lg:h-[30%] mb-24 lg:mb-28 bg-slate-500 rounded-2xl animate-spin-slow'></motion.div>

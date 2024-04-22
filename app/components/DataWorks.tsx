@@ -5,6 +5,7 @@ import dua from '../../public/project-dua.png'
 import tiga from '../../public/project-tiga.png'
 import empat from '../../public/project-empat.png'
 import lima from '../../public/project-lima.png'
+import enam from '../../public/project-enam.png'
 
     // const viewOne : any = useRef()
     // const scrollViewOne = useInView(viewOne,{ margin:"-50px"})
@@ -23,6 +24,15 @@ import lima from '../../public/project-lima.png'
 
 
 export const data = [
+    {
+        id : 6,
+        judul : "Dairy App",
+        image : enam,
+        desc : "Web App Untuk menulis semua diary dan saling sharing kepada semua user yang ada dengan menggunakkan supabase sebagai database untuk menampung semua data usernya Special thanks To Bang Dea Afrizal",
+        link : "https://diary-app-lac.vercel.app/",
+        source : "https://github.com/evanstef/Diary-App"
+    },
+
     {
         id : 1,
         judul : "Movie Search TMDB API",

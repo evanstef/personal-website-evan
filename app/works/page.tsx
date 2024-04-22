@@ -13,10 +13,10 @@ const Works = () => {
 
   return (
     <motion.div className="h-full" initial={{y: "-200vh"}}
-    animate={{y:"0%"}} transition={{duration:0.7}}>
-    <div className='worksContainer mx-6 lg:mx-60 h-full'>
+    animate={{y:"0%"}} transition={{duration:0.7, delay : 0.2}}>
+    <div className='worksContainer flex flex-col gap-5 lg:flex-row mx-6 lg:mx-60 h-full'>
 
-        <div className='flex flex-col items-center text-center'>
+        <div className='flex flex-col items-center md:mt-6 text-center lg:w-[40%] sticky'>
            <motion.h1 initial={{x:-150,opacity:0}} animate={{x:0,opacity:1,transition:{delay:0.8}}} className='font-extralight text-6xl md:text-8xl'>My Works</motion.h1>
            <motion.div initial={{scale:0}} animate={{scale:1,transition:{delay:1}}} className='relative z-10'>
             <svg viewBox='0 0 300 300' className='w-72 h-72 animate-spin-slow'>
@@ -33,10 +33,10 @@ const Works = () => {
            </motion.div>
         </div>
  
-        <div className='w-full h-auto bg-slate-700 rounded-lg md:flex md:flex-wrap'> 
-                {data.map((item : any) => (
+        <div className='w-full lg:w-[60%] h-auto bg-slate-700 rounded-lg md:flex md:flex-wrap'> 
+                {data.map((item : any, i) => (
                    <div key={item.id} className="p-8 md:w-1/2">
-                    <motion.div initial={{scale:0}} animate={{scale:1,transition:{delay:0.7 * item.id}}}>
+                    <motion.div initial={{scale:0}} animate={{scale:1,transition:{delay:0.6 * i}}}>
                         <div className="rounded-lg shadow-lg overflow-hidden bg-slate-300 hover:scale-95 hover:cursor-pointer transition duration-300 ease-in-out">
                         <Image src={item.image} alt="Blog 1" />
                         <div className="px-4 py-6">

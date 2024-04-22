@@ -35,7 +35,7 @@ const ContactPage = () => {
 
   return (
    <motion.div className="h-full" initial={{y: "-200vh"}}
-   animate={{y:"0%"}} transition={{duration:0.7}}>
+   animate={{y:"0%"}} transition={{duration:0.7, delay : 0.2}}>
     <div className='contactContainer mx-8 flex items-center flex-col lg:flex-row lg:items-center lg:justify-center lg:mx-60'>
        <div className='mb-12 lg:w-1/2'>
           <h1 className='text-2xl lg:text-8xl'>😊 {text.split("").map((a,b) => <motion.span key={b} initial={{opacity:1}} animate={{opacity:0, transition : {duration:3, repeat:Infinity, delay:b * 0.1}}}>{a}</motion.span>)}</h1>
