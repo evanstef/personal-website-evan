@@ -25,16 +25,14 @@ import enam from '../../public/project-enam.png'
 
 export const data = [
     {
-        id : 6,
         judul : "Dairy App",
         image : enam,
-        desc : "Web App Untuk menulis semua diary dan saling sharing kepada semua user yang ada dengan menggunakkan supabase sebagai database untuk menampung semua data usernya Special thanks To Bang Dea Afrizal",
+        desc : "Web App Untuk menulis semua diary dan saling sharing kepada semua user yang ada, dengan menggunakkan supabase sebagai database untuk menampung semua data usernya Special thanks To Bang Dea Afrizal",
         link : "https://diary-app-lac.vercel.app/",
         source : "https://github.com/evanstef/Diary-App"
     },
 
     {
-        id : 1,
         judul : "Movie Search TMDB API",
         image : satu,
         desc : "membuat web pencarian film menggunakan framework ReactJS dengan menggunakan API dari TMDB API terima kasih TMDB API",
@@ -43,7 +41,7 @@ export const data = [
     },
 
     {
-        id : 2,
+       
         judul : "Rawg clone",
         image : empat,
         desc : "website pencarian semua game game baik dari yang lama maupun game yang baru keluar serta mendapatkan detail dari game tersebut saya menggunakkan metode consume API yang saya ambil API nya dari rawg io dan website ini dibuat dengan menggunakkan framework nextJs",
@@ -52,7 +50,7 @@ export const data = [
     },
 
     {
-        id : 3,
+        
         judul : "Next Auth Course",
         image : lima,
         desc : "latihan penggunaan next auth dengan code with antonio channel",
@@ -61,7 +59,7 @@ export const data = [
     },
 
     {
-        id : 4,
+        
         judul : "Tailwind CSS Website",
         image : dua,
         desc : "website yang sudah ada sebelumnya dari pak sandhika galih web programming unpas yang saya modifikasi lagi dengan UI yang lebih menarik terima kasih pak dhika",
@@ -70,7 +68,7 @@ export const data = [
     },
 
     {
-        id : 5,
+        
         judul : "Parallax Animated Website (Desktop Only)",
         image : tiga,
         desc : "membuat web perpindahan 4 musim dengan konsep parallax dengan menggunakan animasi sederhana dibuat dari vanilla javascript dan juga vanilla css",
