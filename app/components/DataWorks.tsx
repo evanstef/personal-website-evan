@@ -28,7 +28,7 @@ export const data = [
         judul : "Dairy App",
         image : enam,
         desc : "Web App Untuk menulis semua diary dan saling sharing kepada semua user yang ada, dengan menggunakkan supabase sebagai database untuk menampung semua data usernya Special thanks To Bang Dea Afrizal",
-        link : "https://diary-app-lac.vercel.app/",
+        link : "https://diary-app-lec.vercel.app/",
         source : "https://github.com/evanstef/Diary-App"
     },
 
