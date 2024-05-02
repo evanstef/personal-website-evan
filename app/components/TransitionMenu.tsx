@@ -17,9 +17,9 @@ const TransitionMenu = ({children} : any) => {
           <motion.div className='fixed m-auto top-0 bottom-0 left-0 right-0 text-white text-6xl cursor-default w-fit h-fit z-50 md:text-8xl'
           initial={{opacity:1}}
           animate={{opacity:0}}
-          exit={{opacity:0,display : "none"}}
+          exit={{display : "none"}}
           transition={{duration:0.7, ease:"easeOut"}}>
-            {pathName.substring(1)}
+            {pathName.substring(1,7)}
           </motion.div>
           <motion.div className='h-screen w-screen fixed rounded-t-[100px] bottom-0 bg-slate-700 z-30' initial={{height:"140vh"}} animate={{height:"0vh", transition:{delay:0.5}}}>
           </motion.div>

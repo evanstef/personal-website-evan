@@ -11,6 +11,7 @@
   "dependencies": {
     "@emailjs/browser": "^4.1.0",
     "@ramonak/react-progress-bar": "^5.2.0",
+    "@supabase/supabase-js": "^2.43.0",
     "framer-motion": "^11.0.3",
     "next": "14.1.0",
     "react": "^18",
