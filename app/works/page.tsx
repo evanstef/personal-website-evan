@@ -53,6 +53,7 @@ const Works = () => {
                             <p className='mb-4 text-sm line-clamp-3'>{item.desc}</p>
                             <a href={item.link} target='_blank' className="text-[12px] md:text-sm bg-primary px-3 py-2 mr-2 rounded-full hover:shadow-lg hover:bg-teal-500 text-white dark:bg-slate-500 dark:hover:bg-slate-600">Preview</a>
                             <a href={item.source} target='_blank' className="text-[12px] md:text-sm bg-primary px-3 py-2 rounded-full hover:shadow-lg hover:bg-teal-500 text-white dark:bg-slate-500 dark:hover:bg-slate-600">Source Code</a>
+                  
                             <div className='flex gap-2 mt-4'>
                               {item.icontech.map((item : any, i : any) => (
                                 <div key={i}>{item}</div>
