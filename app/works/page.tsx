@@ -39,7 +39,7 @@ const Works = () => {
                     <motion.div initial={{scale:0}} animate={{scale:1,transition:{delay:0.6 * i}}}>
                         <div className="rounded-lg shadow-lg overflow-hidden bg-slate-300 hover:scale-95 hover:cursor-pointer transition duration-300 ease-in-out">
 
-                        <Link href={`/detail/${item.id}`}>
+                        <Link href={`/detail/${item.judul}`}>
                         <div className='relative'>
                           <Image src={item.image} alt="Blog 1" />  
                           <div className='absolute top-0 w-full h-full duration-500 flex items-center justify-center ease-in-out opacity-0 hover:opacity-100 hover:bg-white/50 hover:backdrop-blur-[1px]'>
