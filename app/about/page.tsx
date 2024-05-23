@@ -24,7 +24,7 @@ const About = () => {
         </div>
         <div className='md:w-1/3 lg:w-1/2'>
           <motion.h1 initial={{x:50, opacity:0}} animate={{x:0, opacity:1}} transition={{delay:1.2}} className='text-2xl font-extrabold'>Holla i am {text.split("").map((kata,i) => <motion.span key={i} initial={{opacity:1}} animate={{opacity:0}} transition={{duration:3,repeat:Infinity,delay:i * 0.03}}>{kata}</motion.span>)}</motion.h1>
-          <motion.p initial={{x:50, opacity:0}} animate={{x:0, opacity:1}} transition={{delay:1.5}} className='my-6 font-semibold'>This is my current skills graphically. I create a bunch of responsive design to express my creativity, especially in designing websites. I&apos;m still working on back end with python language and django framework. Beside coding, in my boredom i also play first person shooting games</motion.p>
+          <motion.p initial={{x:50, opacity:0}} animate={{x:0, opacity:1}} transition={{delay:1.5}} className='my-6 font-semibold'>This is my current skills graphically. I create a bunch of responsive design to express my creativity, especially in designing websites. I&apos;m still working on back end with JavaScript language and ExpressJS, NodeJS, and etc. Beside coding, in my boredom i also play first person shooting games</motion.p>
           <motion.i initial={{x:50,opacity:0}} animate={{x:0,opacity:1}}>{quotes.split("").map((text,i) => <motion.span key={i} initial={{opacity:0}} animate={{opacity:1,transition:{delay:i * 0.07}}} transition={{repeat:0}} >{text}</motion.span>)}</motion.i>
 
           <motion.h1 initial={{x:50,opacity:0}} animate={{x:0, opacity:1, transition:{delay:2}}}className='mt-28 text-2xl font-extrabold mb-6'>My Skills</motion.h1>
@@ -81,17 +81,32 @@ const About = () => {
           </motion.div>
 
           <motion.div initial={{x:60, opacity:0}} animate={scrollView ? {x:0,opacity:1,transition:{delay:1.4}} : {}} className='bg-slate-700 judul flex justify-between font-semibold rounded-lg px-4 text-white mt-5 w-[75%]'>
-            <h3>Django</h3>
-            <p>Beginner</p>
+            <h3>NodeJs</h3>
+            <p>Intermediate</p>
           </motion.div>
 
           <motion.div initial={{x:60, opacity:0}} animate={scrollView ? {x:0,opacity:1,transition:{delay:1.8}} : {}} className='bg-slate-700 judul flex justify-between font-semibold rounded-lg px-4 text-white mt-5 w-[75%]'>
+            <h3>ExpressJs</h3>
+            <p>Intermediate</p>
+          </motion.div>
+
+          <motion.div initial={{x:60, opacity:0}} animate={scrollView ? {x:0,opacity:1,transition:{delay:2.2}} : {}} className='bg-slate-700 judul flex justify-between font-semibold rounded-lg px-4 text-white mt-5 w-[75%]'>
             <h3>Tailwind CSS</h3>
             <p>Advance</p>
           </motion.div>
 
-          <motion.div initial={{x:60, opacity:0}} animate={scrollView ? {x:0,opacity:1,transition:{delay:2.2}} : {}} className='bg-slate-700 judul flex justify-between font-semibold rounded-lg px-4 text-white mt-5 w-[75%]'>
+          <motion.div initial={{x:60, opacity:0}} animate={scrollView ? {x:0,opacity:1,transition:{delay:2.6}} : {}} className='bg-slate-700 judul flex justify-between font-semibold rounded-lg px-4 text-white mt-5 w-[75%]'>
             <h3>Bootstrap</h3>
+            <p>Intermediate</p>
+          </motion.div>
+
+          <motion.div initial={{x:60, opacity:0}} animate={scrollView ? {x:0,opacity:1,transition:{delay:3}} : {}} className='bg-slate-700 judul flex justify-between font-semibold rounded-lg px-4 text-white mt-5 w-[75%]'>
+            <h3>MongoDB</h3>
+            <p>Intermediate</p>
+          </motion.div>
+
+          <motion.div initial={{x:60, opacity:0}} animate={scrollView ? {x:0,opacity:1,transition:{delay:3.4}} : {}} className='bg-slate-700 judul flex justify-between font-semibold rounded-lg px-4 text-white mt-5 w-[75%]'>
+            <h3>Supabase</h3>
             <p>Intermediate</p>
           </motion.div>
 
