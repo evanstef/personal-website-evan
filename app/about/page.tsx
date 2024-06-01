@@ -17,10 +17,10 @@ const About = () => {
   return (
     <motion.div className="h-full" initial={{y: "-200vh"}}
     animate={{y:"0%"}} transition={{duration:0.7, delay : 0.2}}>
-    <div className="aboutContainer mx-8 lg:mx-60 md:flex md:gap-8 lg:top-0">
+    <div className="aboutContainer mx-8 lg:mx-60 md:flex md:gap-16 lg:top-0">
         <div className='hidden md:block top-0 mt-11 md:w-1/2'>
-          <motion.div initial={{opacity:0}} animate={{opacity:1, transition:{delay:0.85}}} className='md:mx-10 lg:mx-0 w-60 h-60 lg:w-[45%] lg:h-[30%] mb-24 lg:mb-28 bg-slate-500 rounded-2xl animate-spin-slow'></motion.div>
-          <motion.div initial={{opacity:0}} animate={{opacity:1, transition:{delay:1}}} className='md:mx-32 lg:ml-60 w-60 h-60 lg:w-[45%] lg:h-[30%] bg-slate-500 rounded-2xl animate-spin-slow text-slate-500 px-1'>KOTAK 2</motion.div>
+          <motion.div initial={{opacity:0}} animate={{opacity:1, transition:{delay:0.85}}} className='md:mx-10 md:w-40 md:h-40 lg:mx-0 lg:w-[45%] lg:h-[23%] mb-24 lg:mb-28 bg-slate-500 rounded-2xl animate-spin-slow'></motion.div>
+          <motion.div initial={{opacity:0}} animate={{opacity:1, transition:{delay:1}}} className='md:mx-32 md:w-40 md:h-40 lg:ml-60 lg:w-[45%] lg:h-[23%] bg-slate-500 rounded-2xl animate-spin-slow text-slate-500 px-1'></motion.div>
         </div>
         <div className='md:w-1/3 lg:w-1/2'>
           <motion.h1 initial={{x:50, opacity:0}} animate={{x:0, opacity:1}} transition={{delay:1.2}} className='text-2xl font-extrabold'>Holla i am {text.split("").map((kata,i) => <motion.span key={i} initial={{opacity:1}} animate={{opacity:0}} transition={{duration:3,repeat:Infinity,delay:i * 0.03}}>{kata}</motion.span>)}</motion.h1>

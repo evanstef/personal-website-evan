@@ -38,7 +38,7 @@ const ContactPage = () => {
    animate={{y:"0%"}} transition={{duration:0.7, delay : 0.2}}>
     <div className='contactContainer mx-8 flex items-center flex-col lg:flex-row lg:items-center lg:justify-center lg:mx-60'>
        <div className='mb-12 lg:w-1/2'>
-          <h1 className='text-2xl lg:text-8xl'>😊 {text.split("").map((a,b) => <motion.span key={b} initial={{opacity:1}} animate={{opacity:0, transition : {duration:3, repeat:Infinity, delay:b * 0.1}}}>{a}</motion.span>)}</h1>
+          <h1 className='text-2xl lg:text-7xl'>😊 {text.split("").map((a,b) => <motion.span key={b} initial={{opacity:1}} animate={{opacity:0, transition : {duration:3, repeat:Infinity, delay:b * 0.1}}}>{a}</motion.span>)}</h1>
        </div>
        <motion.form ref={form} onSubmit={sendEmail} initial={{scale:0}} animate={{scale:1, transition:{delay:0.7}}} className='w-full h-auto flex flex-col justify-center bg-gradient-to-b from-slate-400 to-blue-300 rounded-lg text-white py-6 px-4 lg:w-1/2 lg:py-16'>
           <span className='text-xl lg:text-4xl'>Hello, Evan</span>
