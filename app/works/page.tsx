@@ -6,13 +6,24 @@ import Image from 'next/image'
 import ContactLink from '../components/ContactLink'
 import {motion, useInView} from 'framer-motion';
 import { data } from '../components/DataWorks';
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
 
 
 
 const Works = () => {
 
+  const container = useRef(null)
+  
+  useGSAP(() => {
+    // animation image
+    gsap.from(".gambar-project", {duration: 1, scale: 0, stagger: 0.6 })
+    gsap.to(".gambar-project", {duration: 1.5, scale: 1,  rotateY: 360,  stagger: 0.5 })
+    // animation end image
+  }, {scope: container});
+
   return (
-    <motion.div className="h-full" initial={{y: "-200vh"}}
+    <motion.div ref={container} className="h-full" initial={{y: "-200vh"}}
     animate={{y:"0%"}} transition={{duration:0.7, delay : 0.2}}>
     <div className='worksContainer gap-5 mx-6 lg:mx-60 h-full'>
 
@@ -36,7 +47,7 @@ const Works = () => {
         <div className='w-full h-auto bg-slate-700 rounded-lg md:flex md:flex-wrap'> 
                 {data.map((item : any, i) => (
                    <div key={i} className="p-8 md:w-1/2 lg:w-1/3">
-                    <motion.div initial={{scale:0}} animate={{scale:1,transition:{delay:0.6 * i}}}>
+                    <div className='gambar-project'>
                         <div className="rounded-lg shadow-lg overflow-hidden bg-slate-300 hover:scale-95 hover:cursor-pointer transition duration-300 ease-in-out">
 
                         <Link href={`/detail/${item.judul}`}>
@@ -61,7 +72,7 @@ const Works = () => {
                             </div>
                         </div>
                     </div>
-                    </motion.div>  
+                    </div>  
                 </div> 
                 ))}
           </div>
