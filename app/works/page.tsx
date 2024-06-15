@@ -17,8 +17,7 @@ const Works = () => {
   
   useGSAP(() => {
     // animation image
-    gsap.from(".gambar-project", {duration: 1, scale: 0, stagger: 0.6 })
-    gsap.to(".gambar-project", {duration: 1.5, scale: 1,  rotateY: 360,  stagger: 0.5 })
+    gsap.fromTo(".gambar-project", {duration: 1,opacity: 0, scale: 0 }, {duration: 1,opacity: 1, scale: 1, rotateY: 360,delay: 1, stagger: 0.5, ease: "elastic.out"});
     // animation end image
   }, {scope: container});
 
