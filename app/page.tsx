@@ -15,9 +15,9 @@ export default function Home() {
   useGSAP(() => {
   
     const tl = gsap.timeline();
-    tl.from(".text1 p", { opacity: 0, stagger : 0.2, delay: 1.5 })
-      .from(".text2 p", { opacity: 0, stagger : 0.2 })
-      .from(".text3 p", { opacity: 0, stagger : 0.2 })
+    tl.from(".text1 p", { opacity: 0, stagger : 0.1, delay: 1.5 })
+      .from(".text2 p", { opacity: 0, stagger : 0.1 })
+      .from(".text3 p", { opacity: 0, stagger : 0.1 })
   }, {scope: container});
 
 
