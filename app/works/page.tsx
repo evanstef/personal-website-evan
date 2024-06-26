@@ -17,7 +17,7 @@ const Works = () => {
   
   useGSAP(() => {
     // animation image
-    gsap.fromTo(".gambar-project", {duration: 1,opacity: 0, scale: 0 }, {duration: 1,opacity: 1, scale: 1, rotateY: 360,delay: 1, stagger: 0.5, ease: "elastic.out"});
+    gsap.fromTo(".gambar-project", {duration: 1, opacity : 0 }, { duration: 1, opacity : 1,delay: 1, stagger: 0.5 });
     // animation end image
   }, {scope: container});
 
@@ -50,16 +50,16 @@ const Works = () => {
                         <div className="rounded-lg shadow-lg overflow-hidden bg-slate-300 hover:scale-95 hover:cursor-pointer transition duration-300 ease-in-out">
 
                         <Link href={`/detail/${item.judul}`}>
-                        <div className='relative'>
+                        <div className='relative grayscale-0 duration-300 hover:grayscale'>
                           <Image src={item.image} alt="Blog 1" />  
-                          <div className='absolute top-0 w-full h-full duration-500 flex items-center justify-center ease-in-out opacity-0 hover:opacity-100 hover:bg-white/50 hover:backdrop-blur-[1px]'>
-                            <h1 className='text-slate-950 text-xl font-bold'>View Project ➞</h1>
+                          <div className='absolute flex top-0 left-0 w-full h-full items-center duration-300 opacity-0 hover:opacity-100 y-100 justify-center bg-slate-900 bg-opacity-30'>
+                            <h1 className='font-bold text-white text-2xl'>View Project</h1>
                           </div>
                         </div>
                         </Link>
                         
                         <div className="px-4 py-6">
-                            <h4 className="font-bold text-primary uppercase text-xl mb-2 line-clamp-1">{item.judul}</h4>
+                            <h4 className="font-bold text-primary uppercase text-xl mb-2 line-clamp-1 text-slate-900">{item.judul}</h4>
                             <p className='mb-4 text-sm line-clamp-3'>{item.desc}</p>
                             <a href={item.link} target='_blank' className="text-[12px] md:text-sm bg-primary px-3 py-2 mr-2 rounded-full hover:shadow-lg hover:bg-teal-500 text-white dark:bg-slate-500 dark:hover:bg-slate-600">Preview</a>
                             <a href={item.source} target='_blank' className="text-[12px] md:text-sm bg-primary px-3 py-2 rounded-full hover:shadow-lg hover:bg-teal-500 text-white dark:bg-slate-500 dark:hover:bg-slate-600">Source Code</a>

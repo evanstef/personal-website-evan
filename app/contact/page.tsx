@@ -40,10 +40,10 @@ const ContactPage = () => {
        <div className='mb-12 lg:w-1/2'>
           <h1 className='text-2xl lg:text-7xl'>😊 {text.split("").map((a,b) => <motion.span key={b} initial={{opacity:1}} animate={{opacity:0, transition : {duration:3, repeat:Infinity, delay:b * 0.1}}}>{a}</motion.span>)}</h1>
        </div>
-       <motion.form ref={form} onSubmit={sendEmail} initial={{scale:0}} animate={{scale:1, transition:{delay:0.7}}} className='w-full h-auto flex flex-col justify-center bg-gradient-to-b from-slate-400 to-blue-300 rounded-lg text-white py-6 px-4 lg:w-1/2 lg:py-16'>
-          <span className='text-xl lg:text-4xl'>Hello, Evan</span>
+       <motion.form ref={form} onSubmit={sendEmail} initial={{scale:0}} animate={{scale:1, transition:{delay:0.7}}} className='w-full h-auto flex flex-col justify-center bg-gradient-to-b from-slate-400 to-blue-300 rounded-lg text-white py-6 px-10 lg:w-1/2 lg:py-16'>
+          <span className='text-xl lg:text-2xl'>Hello, Evan</span>
           <textarea rows={8} name='user_message' className='bg-transparent border-b-2 outline-none mb-6 text-2xl'/>
-          <span className='text-xl mb-3 lg:text-4xl lg:mb-10'>Your Email Address :</span>
+          <span className='text-xl mb-3 lg:text-2xl lg:mb-10'>Your Email Address :</span>
           <input type="email" name='user_email' className="bg-transparent border-b-2 outline-none lg:text-2xl lg:mb-5 invalid:text-pink-700 peer"/>
           <p className="text-sm md:text-base top-0 text-pink-500 invisible peer-invalid:visible">Email Not Valid</p>
           <button className='bg-slate-500 text-xl mt-4 rounded-full mx-24 duration-[0.4s] ease-in-out hover:bg-slate-400 py-2 lg:text-4xl mb-4'>Send</button>
