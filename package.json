@@ -16,6 +16,7 @@
     "framer-motion": "^11.0.3",
     "gsap": "^3.12.5",
     "next": "14.1.0",
+    "portfolio": "file:",
     "react": "^18",
     "react-dom": "^18",
     "typewriter-effect": "^2.21.0"

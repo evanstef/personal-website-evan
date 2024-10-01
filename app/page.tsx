@@ -29,7 +29,7 @@ export default function Home() {
   // const text = "Front End Web Developer"
 
   return (
-    <>
+    <div>
       <motion.div className="h-full -z-10" initial={{y: "-200vh"}}
       animate={{y:"0%"}} transition={{duration:0.7, delay : 0.2}}>
       <div ref={container} className="home-container h-full mx-5 mt-40 md:gap-14 lg:mx-44">
@@ -69,7 +69,7 @@ export default function Home() {
             <span className="inline-block ml-1">
               <Typewriter 
               options={{
-                strings : ["JavaScript.", "TypeScript."],
+                strings : ["JavaScript.", "TypeScript.", "PHP."],
                 autoStart : true,
                 loop : true,  
                 delay : 200,
@@ -88,6 +88,6 @@ export default function Home() {
        </span> */}
       </div>
       </motion.div>
-    </>
+    </div>
   )
 }
