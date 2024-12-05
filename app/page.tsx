@@ -35,7 +35,7 @@ export default function Home() {
       <div ref={container} className="home-container h-full mx-5 mt-40 md:gap-14 lg:mx-44">
        <div className="mt-10 flex flex-col justify-center items-center">
           <h1 className="text-[30px] font-bold lg:text-5xl mb-2 text-slate-500 text-awal">Crafting, Design, As a</h1>
-          <div className="text-[37px] font-bold lg:text-5xl mb-4 text-slate-800 flex gap-2 md:gap-8">
+          <div className="text-[37px] font-bold lg:text-5xl sm:mb-4 text-slate-800 flex gap-2 md:gap-8">
             <div className="flex md:gap-3 text1">
               <p>F</p>
               <p>r</p>
@@ -64,7 +64,7 @@ export default function Home() {
             
           </div>
           
-          <h1 className="mx-5 hidden md:block md:mx-0 font-semibold lg:text-3xl text-tengah"> 
+          <h1 className="mx-5 md:mx-0 mb-2 sm:mb-0 font-semibold text-lg sm:text-base lg:text-3xl text-tengah"> 
             I do  
             <span className="inline-block ml-1">
               <Typewriter 

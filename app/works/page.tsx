@@ -43,9 +43,9 @@ const Works = () => {
            </motion.div>
         </div>
  
-        <div className='w-full h-auto bg-slate-700 rounded-lg md:flex md:flex-wrap'> 
+        <div className='w-full h-auto bg-slate-700 rounded-lg grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3'> 
                 {data.map((item : any, i) => (
-                   <div key={i} className="p-8 md:w-1/2 lg:w-1/3">
+                   <div key={i} className="p-8">
                     <div className='gambar-project'>
                         <div className="rounded-lg shadow-lg overflow-hidden bg-slate-300 hover:scale-95 hover:cursor-pointer transition duration-300 ease-in-out">
 
@@ -74,8 +74,8 @@ const Works = () => {
                     </div>  
                 </div> 
                 ))}
-          </div>
-          <div className='mb-6'></div>
+        </div>
+        <div className='mb-6'></div>
     </div>
     </motion.div>
   )
