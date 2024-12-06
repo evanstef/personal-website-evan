@@ -42,14 +42,14 @@ const About = () => {
           <motion.p initial={{x:50, opacity:0}} animate={{x:0, opacity:1}} transition={{delay:1.5}} className='my-6 font-semibold'>This is my current skills graphically. I create a bunch of responsive design to express my creativity, especially in designing websites. I&apos;m still working on back end with JavaScript,PHP language and ExpressJS, NestJs, NodeJS, Laravel and etc. Beside coding, in my boredom i also play first person shooting games</motion.p>
           <motion.i initial={{x:50,opacity:0}} animate={{x:0,opacity:1}}>{quotes.split("").map((text,i) => <motion.span key={i} initial={{opacity:0}} animate={{opacity:1,transition:{delay:i * 0.07}}} transition={{repeat:0}} >{text}</motion.span>)}</motion.i>
 
-          <motion.h1 initial={{x:50,opacity:0}} animate={{x:0, opacity:1, transition:{delay:2}}} className='mt-28 text-2xl font-extrabold mb-6'>Programming Language and etc.</motion.h1>
+          <motion.h1 initial={{x:50,opacity:0}} animate={{x:0, opacity:1, transition:{delay:1.8}}} className='mt-28 text-2xl font-extrabold mb-6'>Programming Language and etc.</motion.h1>
           
           {/* programing language */}
           <div className='grid grid-cols-3 md:grid-cols-2 text-[10px] sm:text-xs xl:grid-cols-4 gap-2'>
             {/* skill icon and text */}
 
             {/* JavaScript */}
-            <motion.div initial={{x:50,opacity:0}} animate={{x:0, opacity:1, transition:{delay:2.2}}} className='border p-1 rounded border-slate-700'>
+            <motion.div initial={{scale : 0}} animate={{scale : 1, transition:{delay:2}}} className='border p-1 rounded border-slate-700'>
               <div className='flex items-center gap-1'>
                 <Image src={js} alt='js' className='w-6 h-6 lg:w-8 lg:h-8' />
                 <span className='font-bold'>JavaScript</span>
@@ -57,7 +57,7 @@ const About = () => {
             </motion.div>
 
             {/* TypeScript */}
-            <motion.div initial={{x:50,opacity:0}} animate={{x:0, opacity:1, transition:{delay:2.4}}} className='border p-1 rounded border-slate-700'>
+            <motion.div initial={{scale : 0}} animate={{scale : 1, transition:{delay:2.1}}} className='border p-1 rounded border-slate-700'>
               <div className='flex items-center gap-1'>
                 <div>
                   <svg className='fill-sky-600 w-6 h-6 lg:w-8 lg:h-8' xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" viewBox="0 0 24 24"  xmlSpace="preserve"><g><path d="M21.656,0H2.344C1.05,0,0,1.05,0,2.344v19.312C0,22.95,1.05,24,2.344,24h19.312C22.95,24,24,22.95,24,21.656V2.344   C24,1.05,22.95,0,21.656,0z M13.922,13.316h-3.01v8.574H8.527v-8.574H5.531v-1.926h8.391V13.316z M21.698,20.37   c-0.467,0.835-1.325,1.305-2.238,1.5c-1.06,0.226-2.187,0.214-3.25,0.015c-0.521-0.098-0.972-0.244-1.353-0.44v-2.347   c0.426,0.357,0.888,0.625,1.387,0.803c0.499,0.179,1.003,0.268,1.511,0.268c0.45,0,0.951-0.056,1.339-0.304   c0.266-0.17,0.444-0.438,0.444-0.759c0-0.437-0.316-0.767-0.657-0.997c-0.499-0.336-1.072-0.555-1.625-0.785   c-0.822-0.342-1.434-0.76-1.838-1.254c-0.702-0.859-0.817-2.231-0.275-3.201c0.463-0.828,1.316-1.316,2.216-1.533   c0.981-0.236,2.046-0.236,3.041-0.081c0.423,0.066,0.813,0.167,1.17,0.304v2.193c-0.176-0.122-0.368-0.23-0.576-0.322   c-0.41-0.183-0.853-0.307-1.298-0.367c-0.445-0.06-0.914-0.07-1.353,0.033c-0.346,0.08-0.71,0.241-0.91,0.55   c-0.083,0.13-0.125,0.275-0.125,0.436c0,0.176,0.046,0.334,0.139,0.473c0.235,0.353,0.649,0.58,1.02,0.763   c0.652,0.32,1.336,0.56,1.962,0.931c0.608,0.359,1.148,0.859,1.412,1.525c0.127,0.32,0.191,0.693,0.191,1.118   C22.031,19.479,21.92,19.972,21.698,20.37z"/></g></svg>
@@ -67,7 +67,7 @@ const About = () => {
             </motion.div>
 
             {/* PHP */}
-            <motion.div initial={{x:50,opacity:0}} animate={{x:0, opacity:1, transition:{delay:2.6}}} className='border p-1 rounded border-slate-700'>
+            <motion.div initial={{scale:0}} animate={{scale : 1, transition:{delay:2.2}}} className='border p-1 rounded border-slate-700'>
               <div className='flex items-center gap-1'>
                 <Image src={php} alt='' className='w-6 h-6 lg:w-8 lg:h-8' />
                 <span className='font-bold'>PHP</span>
@@ -75,7 +75,7 @@ const About = () => {
             </motion.div>
 
             {/* Pyhton */}
-            <motion.div initial={{x:50,opacity:0}} animate={{x:0, opacity:1, transition:{delay:2.8}}} className='border p-1 rounded border-slate-700'>
+            <motion.div initial={{scale : 0}} animate={{scale : 1, transition:{delay:2.3}}} className='border p-1 rounded border-slate-700'>
               <div className='flex items-center gap-1'>
                 <Image src={python} alt='' className='w-6 h-6 lg:w-8 lg:h-8' />
                 <span className='font-bold'>Python</span>
@@ -83,7 +83,7 @@ const About = () => {
             </motion.div>
 
              {/* Java */}
-            <motion.div initial={{x:50,opacity:0}} animate={{x:0, opacity:1, transition:{delay:3}}} className='border p-1 rounded border-slate-700'>
+            <motion.div initial={{scale : 0}} animate={{scale : 1, transition:{delay:2.4}}} className='border p-1 rounded border-slate-700'>
               <div className='flex items-center gap-1'>
                 <Image src={java} alt='' className='w-6 h-6 lg:w-8 lg:h-8' />
                 <span className='font-bold'>Java</span>
@@ -91,7 +91,7 @@ const About = () => {
             </motion.div>
 
             {/* HTML */}
-            <motion.div initial={{x:50,opacity:0}} animate={{x:0, opacity:1, transition:{delay:3.2}}} className='border p-1 rounded border-slate-700'>
+            <motion.div initial={{scale : 0}} animate={{scale : 1, transition:{delay:2.5}}} className='border p-1 rounded border-slate-700'>
               <div className='flex items-center gap-1'>
                 <Image src={html} alt='' className='w-6 h-6 lg:w-8 lg:h-8' />
                 <span className='font-bold'>HTML</span>
@@ -99,23 +99,15 @@ const About = () => {
             </motion.div>
 
             {/* CSS */}
-            <motion.div initial={{x:50,opacity:0}} animate={{x:0, opacity:1, transition:{delay:3.4}}} className='border p-1 rounded border-slate-700'>
+            <motion.div initial={{scale : 0}} animate={{scale : 1, transition:{delay:2.6}}} className='border p-1 rounded border-slate-700'>
               <div className='flex items-center gap-1'>
                 <Image src={css} alt='' className='w-6 h-6 lg:w-8 lg:h-8' />
                 <span className='font-bold'>CSS</span>
               </div>
             </motion.div>
 
-          </div>
-
-          {/* framework and database */}
-          <div className='mt-28' ref={view}>
-            <motion.h1 initial={{opacity:0, x:-50}} animate={scrollView ? {opacity:1, x:0} : {}} className='mb-6 font-extrabold text-2xl judul-framework'>Framework and Database</motion.h1>
-            
-            {/* Bar Framework */}
-            <div className='grid grid-cols-3 md:grid-cols-2 text-[10px] sm:text-xs xl:grid-cols-4 gap-2'>
-              {/* NextJS */}
-              <motion.div initial={{opacity:0, x:-50}} animate={scrollView ? {opacity:1, x:0, transition : {delay : 0.2}} : {}} className='border p-1 rounded border-slate-700'>
+            {/* NextJS */}
+            <motion.div initial={{scale : 0}} animate={{scale : 1, transition : {delay : 2.7}}} className='border p-1 rounded border-slate-700'>
                 <div className='flex items-center gap-1'>
                   <svg className='w-6 h-6 lg:w-8 lg:h-8' fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_950_641)"><path d="M11.2141 0.00645944C11.1625 0.0111515 10.9982 0.0275738 10.8504 0.039304C7.44164 0.346635 4.24868 2.18593 2.22639 5.01291C1.10029 6.58476 0.380059 8.36775 0.107918 10.2563C0.0117302 10.9156 0 11.1103 0 12.0041C0 12.898 0.0117302 13.0927 0.107918 13.7519C0.760117 18.2587 3.96716 22.0452 8.31672 23.4481C9.0956 23.6991 9.91672 23.8704 10.8504 23.9736C11.2141 24.0135 12.7859 24.0135 13.1496 23.9736C14.7613 23.7953 16.1267 23.3965 17.4733 22.7091C17.6798 22.6035 17.7196 22.5754 17.6915 22.5519C17.6727 22.5378 16.793 21.3578 15.7372 19.9314L13.8182 17.339L11.4135 13.7801C10.0903 11.8235 9.00176 10.2235 8.99238 10.2235C8.98299 10.2211 8.97361 11.8024 8.96891 13.7331C8.96188 17.1138 8.95953 17.2499 8.9173 17.3296C8.85631 17.4446 8.80938 17.4915 8.71085 17.5431C8.63578 17.5807 8.57009 17.5877 8.21584 17.5877H7.80997L7.70205 17.5197C7.63167 17.4751 7.58006 17.4164 7.54487 17.3484L7.4956 17.2428L7.50029 12.539L7.50733 7.83285L7.58006 7.74136C7.6176 7.69209 7.69736 7.62875 7.75367 7.59825C7.84985 7.55133 7.88739 7.54664 8.29325 7.54664C8.77185 7.54664 8.85161 7.5654 8.97595 7.70147C9.01114 7.73901 10.3132 9.7003 11.871 12.0628C13.4287 14.4252 15.5589 17.651 16.6053 19.2346L18.5056 22.1132L18.6018 22.0499C19.4534 21.4962 20.3543 20.7079 21.0674 19.8868C22.5853 18.1437 23.5636 16.0182 23.8921 13.7519C23.9883 13.0927 24 12.898 24 12.0041C24 11.1103 23.9883 10.9156 23.8921 10.2563C23.2399 5.74957 20.0328 1.96306 15.6833 0.560125C14.9161 0.311445 14.0997 0.140184 13.1848 0.036958C12.9595 0.0134976 11.4088 -0.0123089 11.2141 0.00645944ZM16.1267 7.26511C16.2393 7.32142 16.3308 7.42933 16.3636 7.54194C16.3824 7.60294 16.3871 8.90734 16.3824 11.8469L16.3754 16.0651L15.6317 14.9249L14.8856 13.7848V10.7185C14.8856 8.73608 14.895 7.62171 14.9091 7.56775C14.9466 7.43637 15.0287 7.33315 15.1413 7.27215C15.2375 7.22288 15.2727 7.21819 15.6411 7.21819C15.9883 7.21819 16.0493 7.22288 16.1267 7.26511Z" fill="black"/></g><defs><clipPath id="clip0_950_641"><rect fill="white" height="24" width="24"/></clipPath></defs></svg>
                   <span className='font-bold'>NextJS</span>
@@ -123,7 +115,7 @@ const About = () => {
               </motion.div>
 
               {/* ReactJs */}
-              <motion.div initial={{opacity:0, x:-50}} animate={scrollView ? {opacity:1, x:0, transition : {delay : 0.4}} : {}} className='border p-1 rounded border-slate-700'>
+              <motion.div initial={{scale : 0}} animate={{scale : 1, transition : {delay : 2.8}}} className='border p-1 rounded border-slate-700'>
                 <div className='flex items-center gap-1'>
                   <svg  className='fill-sky-400 w-6 h-6 lg:w-8 lg:h-8' role="img" viewBox="0 0 24 24" width={30} height={30} xmlns="http://www.w3.org/2000/svg"><title/><path d="M12 9.861A2.139 2.139 0 1 0 12 14.139 2.139 2.139 0 1 0 12 9.861zM6.008 16.255l-.472-.12C2.018 15.246 0 13.737 0 11.996s2.018-3.25 5.536-4.139l.472-.119.133.468a23.53 23.53 0 0 0 1.363 3.578l.101.213-.101.213a23.307 23.307 0 0 0-1.363 3.578l-.133.467zM5.317 8.95c-2.674.751-4.315 1.9-4.315 3.046 0 1.145 1.641 2.294 4.315 3.046a24.95 24.95 0 0 1 1.182-3.046A24.752 24.752 0 0 1 5.317 8.95zM17.992 16.255l-.133-.469a23.357 23.357 0 0 0-1.364-3.577l-.101-.213.101-.213a23.42 23.42 0 0 0 1.364-3.578l.133-.468.473.119c3.517.889 5.535 2.398 5.535 4.14s-2.018 3.25-5.535 4.139l-.473.12zm-.491-4.259c.48 1.039.877 2.06 1.182 3.046 2.675-.752 4.315-1.901 4.315-3.046 0-1.146-1.641-2.294-4.315-3.046a24.788 24.788 0 0 1-1.182 3.046zM5.31 8.945l-.133-.467C4.188 4.992 4.488 2.494 6 1.622c1.483-.856 3.864.155 6.359 2.716l.34.349-.34.349a23.552 23.552 0 0 0-2.422 2.967l-.135.193-.235.02a23.657 23.657 0 0 0-3.785.61l-.472.119zm1.896-6.63c-.268 0-.505.058-.705.173-.994.573-1.17 2.565-.485 5.253a25.122 25.122 0 0 1 3.233-.501 24.847 24.847 0 0 1 2.052-2.544c-1.56-1.519-3.037-2.381-4.095-2.381zM16.795 22.677c-.001 0-.001 0 0 0-1.425 0-3.255-1.073-5.154-3.023l-.34-.349.34-.349a23.53 23.53 0 0 0 2.421-2.968l.135-.193.234-.02a23.63 23.63 0 0 0 3.787-.609l.472-.119.134.468c.987 3.484.688 5.983-.824 6.854a2.38 2.38 0 0 1-1.205.308zm-4.096-3.381c1.56 1.519 3.037 2.381 4.095 2.381h.001c.267 0 .505-.058.704-.173.994-.573 1.171-2.566.485-5.254a25.02 25.02 0 0 1-3.234.501 24.674 24.674 0 0 1-2.051 2.545zM18.69 8.945l-.472-.119a23.479 23.479 0 0 0-3.787-.61l-.234-.02-.135-.193a23.414 23.414 0 0 0-2.421-2.967l-.34-.349.34-.349C14.135 1.778 16.515.767 18 1.622c1.512.872 1.812 3.37.824 6.855l-.134.468zM14.75 7.24c1.142.104 2.227.273 3.234.501.686-2.688.509-4.68-.485-5.253-.988-.571-2.845.304-4.8 2.208A24.849 24.849 0 0 1 14.75 7.24zM7.206 22.677A2.38 2.38 0 0 1 6 22.369c-1.512-.871-1.812-3.369-.823-6.854l.132-.468.472.119c1.155.291 2.429.496 3.785.609l.235.02.134.193a23.596 23.596 0 0 0 2.422 2.968l.34.349-.34.349c-1.898 1.95-3.728 3.023-5.151 3.023zm-1.19-6.427c-.686 2.688-.509 4.681.485 5.254.987.563 2.843-.305 4.8-2.208a24.998 24.998 0 0 1-2.052-2.545 24.976 24.976 0 0 1-3.233-.501zM12 16.878c-.823 0-1.669-.036-2.516-.106l-.235-.02-.135-.193a30.388 30.388 0 0 1-1.35-2.122 30.354 30.354 0 0 1-1.166-2.228l-.1-.213.1-.213a30.3 30.3 0 0 1 1.166-2.228c.414-.716.869-1.43 1.35-2.122l.135-.193.235-.02a29.785 29.785 0 0 1 5.033 0l.234.02.134.193a30.006 30.006 0 0 1 2.517 4.35l.101.213-.101.213a29.6 29.6 0 0 1-2.517 4.35l-.134.193-.234.02c-.847.07-1.694.106-2.517.106zm-2.197-1.084c1.48.111 2.914.111 4.395 0a29.006 29.006 0 0 0 2.196-3.798 28.585 28.585 0 0 0-2.197-3.798 29.031 29.031 0 0 0-4.394 0 28.477 28.477 0 0 0-2.197 3.798 29.114 29.114 0 0 0 2.197 3.798z"/></svg>
                   <span className='font-bold'>ReactJS</span>
@@ -131,7 +123,7 @@ const About = () => {
               </motion.div>
 
               {/* NodeJS */}
-              <motion.div initial={{opacity:0, x:-50}} animate={scrollView ? {opacity:1, x:0, transition : {delay : 0.6}} : {}} className='border p-1 rounded border-slate-700'>
+              <motion.div initial={{scale : 0}} animate={{scale : 1, transition : {delay : 2.9}}} className='border p-1 rounded border-slate-700'>
                 <div className='flex items-center gap-1'>
                   <Image src={nodejs} alt='node' className='w-6 h-6 lg:w-8 lg:h-8' />
                   <span className='font-bold'>NodeJS</span>
@@ -139,7 +131,7 @@ const About = () => {
               </motion.div>
 
               {/* ExpressJS */}
-              <motion.div initial={{opacity:0, x:-50}} animate={scrollView ? {opacity:1, x:0, transition : {delay : 0.8}} : {}} className='border p-1 rounded border-slate-700'>
+              <motion.div initial={{scale : 0}} animate={{scale : 1, transition : {delay : 3}}} className='border p-1 rounded border-slate-700'>
                 <div className='flex items-center gap-1'>
                   <Image src={express} alt='express' className='w-6 h-6 lg:w-8 lg:h-8' />
                   <span className='font-bold'>ExpressJS</span>
@@ -147,7 +139,7 @@ const About = () => {
               </motion.div>
 
               {/* NestJS */}
-              <motion.div initial={{opacity:0, x:-50}} animate={scrollView ? {opacity:1, x:0, transition : {delay : 1}} : {}} className='border p-1 rounded border-slate-700'>
+              <motion.div initial={{scale : 0}} animate={{scale : 1, transition : {delay : 3.1}}} className='border p-1 rounded border-slate-700'>
                 <div className='flex items-center gap-1'>
                   <svg className='w-6 h-6 lg:w-8 lg:h-8'  viewBox="0 0 264.58333 255.58751"
                     xmlns="http://www.w3.org/2000/svg">
@@ -164,7 +156,7 @@ const About = () => {
               </motion.div>
 
               {/* Laravel */}
-              <motion.div initial={{opacity:0, x:-50}} animate={scrollView ? {opacity:1, x:0, transition : {delay : 1.2}} : {}} className='border p-1 rounded border-slate-700'>
+              <motion.div initial={{scale : 0}} animate={{scale : 1, transition : {delay : 3.2}}} className='border p-1 rounded border-slate-700'>
                 <div className='flex items-center gap-1'>
                   <Image src={laravel} alt='laravel' className='w-6 h-6 lg:w-8 lg:h-8' />
                   <span className='font-bold'>Laravel</span>
@@ -172,7 +164,7 @@ const About = () => {
               </motion.div>
 
               {/* TailwindCSS */}
-              <motion.div initial={{opacity:0, x:-50}} animate={scrollView ? {opacity:1, x:0, transition : {delay : 1.4}} : {}} className='border p-1 rounded border-slate-700'>
+              <motion.div initial={{scale : 0}} animate={{scale : 1, transition : {delay : 3.3}}} className='border p-1 rounded border-slate-700'>
                 <div className='flex items-center gap-1'>
                   <svg className='fill-sky-400 w-6 h-6 lg:w-8 lg:h-8' viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg"><path d="M18.5 9.51a4.22 4.22 0 0 1-1.91-1.34A5.77 5.77 0 0 0 12 6a4.72 4.72 0 0 0-5 4 3.23 3.23 0 0 1 3.5-1.49 4.32 4.32 0 0 1 1.91 1.35A5.77 5.77 0 0 0 17 12a4.72 4.72 0 0 0 5-4 3.2 3.2 0 0 1-3.5 1.51zm-13 4.98a4.22 4.22 0 0 1 1.91 1.34A5.77 5.77 0 0 0 12 18a4.72 4.72 0 0 0 5-4 3.23 3.23 0 0 1-3.5 1.49 4.32 4.32 0 0 1-1.91-1.35A5.8 5.8 0 0 0 7 12a4.72 4.72 0 0 0-5 4 3.2 3.2 0 0 1 3.5-1.51z"/></svg>
                   <span className='font-bold'>TailwindCSS</span>
@@ -180,7 +172,7 @@ const About = () => {
               </motion.div>
 
               {/* Bootstrap */}
-              <motion.div initial={{opacity:0, x:-50}} animate={scrollView ? {opacity:1, x:0, transition : {delay : 1.6}} : {}} className='border p-1 rounded border-slate-700'>
+              <motion.div initial={{scale : 0}} animate={{scale : 1, transition : {delay : 3.4}}} className='border p-1 rounded border-slate-700'>
                 <div className='flex items-center gap-1'>
                   <Image src={bootstrap} alt='bootstrap' className='w-6 h-6 lg:w-8 lg:h-8' />
                   <span className='font-bold'>Bootstrap</span>
@@ -188,7 +180,7 @@ const About = () => {
               </motion.div>
 
               {/* Prisma */}
-              <motion.div initial={{opacity:0, x:-50}} animate={scrollView ? {opacity:1, x:0, transition : {delay : 1.8}} : {}} className='border p-1 rounded border-slate-700'>
+              <motion.div initial={{scale : 0}} animate={{scale : 1, transition : {delay : 3.5}}} className='border p-1 rounded border-slate-700'>
                 <div className='flex items-center gap-1'>
                 <svg className='w-6 h-6 lg:w-8 lg:h-8' xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 48 48">
                   <path fill="#4db6ac" d="M44.284,36.035L27.687,1.429c-0.855-1.783-3.337-1.93-4.397-0.26L4.886,30.177	c-0.397,0.625-0.385,1.426,0.029,2.04l9.271,13.738c0.575,0.852,1.634,1.237,2.623,0.953l25.942-7.458	C44.208,39.031,44.939,37.402,44.284,36.035z M40.618,37.279L18.8,43.388c-0.505,0.142-0.98-0.305-0.87-0.818l7.735-36.097	c0.139-0.65,1.023-0.755,1.311-0.157l14.265,29.621C41.489,36.481,41.194,37.118,40.618,37.279z"></path>
@@ -198,7 +190,7 @@ const About = () => {
               </motion.div>
 
               {/* MySQl */}
-              <motion.div initial={{opacity:0, x:-50}} animate={scrollView ? {opacity:1, x:0, transition : {delay : 2}} : {}} className='border p-1 rounded border-slate-700'>
+              <motion.div initial={{scale : 0}} animate={{scale : 1, transition : {delay : 3.6}}} className='border p-1 rounded border-slate-700'>
                 <div className='flex items-center gap-1'>
                   <Image src={mysql} alt='mysql' className='w-6 h-6 lg:w-8 lg:h-8' />
                   <span className='font-bold'>MySQL</span>
@@ -206,7 +198,7 @@ const About = () => {
               </motion.div>
 
               {/* MongoDB */}
-              <motion.div initial={{opacity:0, x:-50}} animate={scrollView ? {opacity:1, x:0, transition : {delay : 2.2}} : {}} className='border p-1 rounded border-slate-700'>
+              <motion.div initial={{scale : 0}} animate={{scale : 1, transition : {delay : 3.7}}} className='border p-1 rounded border-slate-700'>
                 <div className='flex items-center gap-1'>
                   <svg xmlns="http://www.w3.org/2000/svg" className='w-6 h-6 lg:w-8 lg:h-8' viewBox="0 0 1102 278" fill="none">
                   <path d="M82.3229 28.6444C71.5367 15.8469 62.2485 2.84945 60.351 0.149971C60.1512 -0.0499903 59.8515 -0.0499903 59.6518 0.149971C57.7542 2.84945 48.4661 15.8469 37.6798 28.6444C-54.9019 146.721 52.2613 226.406 52.2613 226.406L53.1601 227.006C53.959 239.303 55.9565 257 55.9565 257H59.9514H63.9463C63.9463 257 65.9438 239.403 66.7428 227.006L67.6416 226.306C67.7414 226.406 174.905 146.721 82.3229 28.6444ZM59.9514 224.606C59.9514 224.606 55.1576 220.507 53.8592 218.408V218.207L59.6518 89.6326C59.6518 89.2326 60.2511 89.2326 60.2511 89.6326L66.0436 218.207V218.408C64.7453 220.507 59.9514 224.606 59.9514 224.606Z" fill="#001E2B"/>
@@ -224,7 +216,7 @@ const About = () => {
               </motion.div>
 
               {/* Supabase */}
-              <motion.div initial={{opacity:0, x:-50}} animate={scrollView ? {opacity:1, x:0, transition : {delay : 2.4}} : {}} className='border p-1 rounded border-slate-700'>
+              <motion.div initial={{scale : 0}} animate={{scale : 1, transition : {delay : 3.8}}} className='border p-1 rounded border-slate-700'>
                 <div className='flex items-center gap-1'>
                   <svg className='w-6 h-6 lg:w-8 lg:h-8' viewBox="0 0 109 113" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M63.7076 110.284C60.8481 113.885 55.0502 111.912 54.9813 107.314L53.9738 40.0625L99.1935 40.0625C107.384 40.0625 111.952 49.5226 106.859 55.9372L63.7076 110.284Z" fill="url(#paint0_linear)"/>
@@ -245,12 +237,10 @@ const About = () => {
                 </div>
               </motion.div>
 
-            </div>
-            
-
+          </div>
+          
           <div className='mb-5'></div>
           </div>
-        </div>
     </div>
     </motion.div>
   )
